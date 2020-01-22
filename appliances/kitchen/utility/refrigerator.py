@@ -1,10 +1,10 @@
 from appliances import Appliance
 
 
-def Refrigerator(Appliance):
+class Refrigerator(Appliance):
 
-    def __init__(self, color):
-        super.__init__(color)
+    def __init__(self, color, heat_method):
+        super().__init__(color, heat_method)
 
-    def make_ice():
+    def make_ice(self):
         print("grind, grind, clunk. Time to call the repair person")
