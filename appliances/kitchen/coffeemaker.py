@@ -1,7 +1,9 @@
-def CoffeeMaker(Appliance):
+from appliances import Appliance
 
-    def __init__(self, color):
-        super.__init__(color)
+class CoffeeMaker(Appliance):
 
-    def make_coffee():
+    def __init__(self, color, heat_method):
+        super().__init__(color, heat_method)
+
+    def make_coffee(self):
         print("gurgle, gurgle. Ding. Your drug of choice is piping hot and ready!")
